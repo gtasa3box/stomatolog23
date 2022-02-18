@@ -6,6 +6,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+        opacity: 0.8;
+    }
     &_orange-grad {
         font-family: var(--OpenSans);
         font-style: normal;
@@ -17,5 +20,32 @@
         color: #FFFFFF;
         background: linear-gradient(90deg, #FF6939 0%, #FB6434 51.34%, #F78866 61.98%, #F15828 72.02%, #E94F1E 100%);
         border-radius: 10px;
+    }
+    &_orange {
+        background: linear-gradient(90deg, #FF6939 0%, #E94F1E 100%);
+        border-radius: 10px;
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        padding: 11px 24px;
+    }
+    &_trans {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+        padding: 11px 30px;
     }
 }
