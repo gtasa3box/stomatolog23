@@ -1,3 +1,45 @@
 .services {
-    
+    padding: 110px 0 150px;
+    &__content {
+
+    }
+    &__info {
+        position: relative;
+        padding: 50px 35px 50px 0;
+        max-width: 488px;
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 2000%;
+            height: 100%;
+            background: rgba(235, 250, 255, 0.4);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 0px 30px 30px 0px;
+        }
+        h2 {
+            position: relative;
+            z-index: 2;
+        }
+        p {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &__text {
+        max-width: 452px;
+        margin-top: 20px;
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        /* or 21px */
+
+        letter-spacing: 0.02em;
+
+        color: rgba(0, 0, 0, 0.8);
+    }
 }
