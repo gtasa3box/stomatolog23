@@ -1,0 +1,59 @@
+.header {
+    background: #FFFFFF;
+    position: relative;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0 15px;
+    }
+    &__logo {
+        width: 93px;
+        height: 41px;
+    }
+    &__number {
+        .number {
+            display: block;
+            font-family: var(--OpenSans);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #000000;
+            transition: 0.3s ease;
+            position: relative;
+            padding: 9px 18px 11px;
+            &:hover {
+                opacity: 0.8;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                border-top: 2px solid #FF6939;
+                border-right: 2px solid #FF6939;
+                border-radius: 0 10px 0 0 ;
+                top: 0px;
+                left: 1px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                border-bottom: 2px solid #FF6939;
+                border-left: 2px solid #FF6939;
+                border-radius: 0 0 0 10px ;
+                bottom: 0px;
+                left: -1px;
+            }
+        }
+    }
+    &__btn {
+        width: 164px;
+        height: 36px;
+    }
+}
