@@ -60,11 +60,6 @@
         display: flex;
         align-items: center;
     }
-    .owl-next {
-        img {
-            transform: rotate(180deg);
-        }
-    }
     .owl-nav [class*=owl-]:hover {
         background: transparent;
     }
@@ -100,11 +95,6 @@
         width: 110%;
         display: flex;
         justify-content: space-between;
-    }
-    .owl-next {
-        img {
-            transform: rotate(180deg);
-        }
     }
     .owl-nav [class*=owl-]:hover {
         background: transparent;
@@ -159,11 +149,6 @@
         align-items: center;
         justify-content: space-between;
         width: 50px;
-    }
-    .owl-next {
-        img {
-            transform: rotate(180deg);
-        }
     }
     .owl-nav [class*=owl-]:hover {
         background: transparent;

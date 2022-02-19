@@ -3,7 +3,7 @@ $('.owl-services').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider.svg'>"],
+    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
@@ -27,7 +27,7 @@ $('.owl-specialists').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider.svg'>"],
+    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
@@ -67,7 +67,7 @@ $('.owl-result').owlCarousel({
     loop:true,
     margin:40,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider.svg'>"],
+    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
