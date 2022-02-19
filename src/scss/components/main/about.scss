@@ -1,0 +1,94 @@
+.about {
+    position: relative;
+    padding-bottom: 173px;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 41px;
+        background-image: url(../img/main/about/elem-before.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 410px;
+        height: 379px;
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -196px;
+        background-image: url(../img/main/about/elem-before2.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 440px;
+        height: 538.34px;
+        z-index: -1;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        padding-top: 20px;
+        max-width: 515px;
+    }
+    &__text {
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.7);
+        margin: 20px 0 50px;
+    }
+    &__btn {
+        width: 160px;
+        height: 40px;
+    }
+    &__video {
+        width: 515px;
+        height: 452px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/play.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 104px;
+            height: 104px;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%,-50%);
+            pointer-events: none;
+        }
+        a {
+            display: block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                pointer-events: none;
+            }
+        }
+    }
+}

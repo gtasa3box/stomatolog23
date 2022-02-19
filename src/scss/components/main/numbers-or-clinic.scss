@@ -1,0 +1,50 @@
+.numbers-or-clinic {
+    padding-bottom: 200px;
+    &__content {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/main/numbers-or-clinic/tooth.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 237px;
+            height: 237px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__grid {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 830px;
+        position: relative;
+        z-index: 2;
+    }
+    &__elem {
+        margin-top: 25px;
+        p {
+            font-family: var(--OpenSans);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            padding-right: 48px;
+        }
+        span {
+            font-family: var(--Geometria);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            margin-right: 13px;
+        }
+    }
+}

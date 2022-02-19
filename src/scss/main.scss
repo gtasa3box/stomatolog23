@@ -12,6 +12,7 @@
 @import "./components/icons";
 @import "./components/title";
 @import "./components/sliders";
+@import "./components/cards";
 
 // подключения компонентов страницы
 @import "./components/header";
@@ -19,5 +20,8 @@
 //main
 @import "./components/main/intro";
 @import "./components/main/services";
+@import "./components/main/about";
+@import "./components/main/numbers-or-clinic";
+@import "./components/main/specialists";
 
 
