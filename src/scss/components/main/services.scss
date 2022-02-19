@@ -1,12 +1,15 @@
 .services {
     padding: 110px 0 150px;
     &__content {
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__info {
         position: relative;
         padding: 50px 35px 50px 0;
         max-width: 488px;
+        flex: none;
         &:before {
             content: '';
             position: absolute;
@@ -41,5 +44,27 @@
         letter-spacing: 0.02em;
 
         color: rgba(0, 0, 0, 0.8);
+    }
+    &__slider {
+        width: 555px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        height: 190px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 140px;
+            height: 1px;
+            width: 238px;
+            background-color: black;
+        }
+    }
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: -19px;
+        width: 112px;
     }
 }

@@ -1,0 +1,72 @@
+.owl-services {  
+    &__slide {
+        position: relative;
+        width: 163.24px;
+        height: 133.04px;
+    }
+    &__img {
+        display: block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+        }
+    }
+    &__title {
+        font-family: var(--Geometria);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .owl-dots {
+        position: absolute;
+        top: -67px;
+        left: 0;
+        background-color: white;
+    }
+    .owl-dots .owl-dot span {
+        border: 1px solid #000000;
+        background-color: transparent;
+    }
+    .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+        background-color: #000000;
+    }
+    .owl-nav {
+        position: absolute;
+        top: -70px;
+        left: 100px;
+        margin-top: 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+    .owl-next {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    .owl-nav [class*=owl-]:hover {
+        background: transparent;
+    }
+}
