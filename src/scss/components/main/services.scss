@@ -1,5 +1,31 @@
 .services {
     padding: 110px 0 150px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -196px;
+        background-image: url(../img/main/services/elem-before.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 274.22px;
+        height: 712px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: -12px;
+        top: 105px;
+        background-image: url(../img/main/services/wave-before.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 120px;
+        z-index: -1;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
