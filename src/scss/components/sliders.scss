@@ -1,3 +1,4 @@
+//services
 .owl-services {  
     &__slide {
         position: relative;
@@ -58,6 +59,47 @@
         margin-top: 0;
         display: flex;
         align-items: center;
+    }
+    .owl-next {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    .owl-nav [class*=owl-]:hover {
+        background: transparent;
+    }
+}
+
+//specialists
+
+.owl-specialists {
+    flex: none;
+    transform: rotate(90deg);
+    position: absolute;
+    max-width: 442px;
+    right: 250px;
+    top: 175px;
+    &__slide {
+        transform: rotate(-90deg);
+        width: 98px;
+        height: 98px;
+        a {
+            display: block;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        left:-5%;
+        transform: translateY(-75%);
+        width: 110%;
+        display: flex;
+        justify-content: space-between;
     }
     .owl-next {
         img {

@@ -1,10 +1,59 @@
 .specialists {
+    padding-bottom: 150px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 158px;
+        background-image: url(../img/main/specialists/elem-before.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 309px;
+        height: 264px;
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -343px;
+        background-image: url(../img/main/specialists/elem-before2.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 328px;
+        height: 847.5px;
+        z-index: -1;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     &__cards {
         flex: none;
     }
-
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 370px;
+        background: rgba(235, 250, 255, 0.4);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        padding: 40px 30px 60px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.7);
+    }
 }
