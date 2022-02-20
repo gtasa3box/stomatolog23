@@ -1,5 +1,19 @@
 .stock {
     padding-bottom: 150px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        right: -43px;
+        bottom: 92px;
+        background-image: url(../img/main/services/wave-before.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 120px;
+        z-index: -1;
+    }
     &__content {
     }
     &__grid {
