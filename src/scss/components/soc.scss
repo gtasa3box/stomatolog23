@@ -1,0 +1,36 @@
+.soc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__elem {
+        cursor: pointer;
+        transition: 0.3s ease;
+        display: block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+    &__inst {
+        background-image: url(../img/soc/instagram.svg);
+        width: 34px;
+        height: 34px;
+    }
+    &__you {
+        background-image: url(../img/soc/youtube.svg);
+        width: 30px;
+        height: 30px;
+    }
+    &__vk {
+        background-image: url(../img/soc/vk.svg);
+        width: 33px;
+        height: 33px;
+    }
+    &__face {
+        background-image: url(../img/soc/facebook.svg);
+        width: 28px;
+        height: 28px;
+    }
+}

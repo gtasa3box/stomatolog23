@@ -6,4 +6,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    &-big {
+        background-image: url(../img/logo-big.png);
+    }
 }
