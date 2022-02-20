@@ -61,6 +61,19 @@ document.querySelector('#phone').addEventListener('input',
     }
 )
 
+const phoneInputField1 = document.querySelector("#phone1");
+const phoneInput1 = window.intlTelInput(phoneInputField1, {
+    initialCountry: "ru",
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+document.querySelector('#phone1').addEventListener('input', 
+    function(e){
+      this.value = this.value.replace(/[^\d.]/g, '');
+    }
+)
+
 // slider-result
 
 $('.owl-result').owlCarousel({

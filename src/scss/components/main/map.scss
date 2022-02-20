@@ -1,0 +1,110 @@
+.map {
+    position: relative;
+    height: 643px;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/main/map/before-elem.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 1230px;
+        height: 360.17px;
+        right: 0;
+        bottom: -50px;
+        z-index: 2;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 443px;
+        z-index: -1;
+    }
+    &__content {
+        padding-top: 100px;
+    }
+    &__form-block {
+        max-width: 515px;
+        padding: 40px 50px 40px 0;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top:0;
+            right: 0;
+            height: 100%;
+            width: 2000%;
+            background: rgba(235, 250, 255, 0.4);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 0px 30px 30px 0px;
+            z-index: -1;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 234px;
+        input {
+            outline: none;
+            border: none;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            height: 40px;
+            padding: 0 12px;
+            width: 100%;
+            max-width: 211px;
+            margin-bottom: 20px;
+            &::placeholder {
+                font-family: var(--OpenSans);
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        .iti {
+            margin-bottom: 20px;
+        }
+        button {
+            outline: none;
+            border: none;
+            font-family: var(--Geometria);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            max-width: 211px;
+            height: 40px;
+        }
+        textarea {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            border: none;
+            border-radius: 10px;
+            height: 220px;
+            padding: 12px 16px;
+            resize: none;
+            outline: none;
+            &::placeholder {
+                font-family: var(--OpenSans);
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
