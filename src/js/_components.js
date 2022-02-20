@@ -84,3 +84,27 @@ $('.owl-result').owlCarousel({
         }
     }
 })
+
+// slider-reviews
+
+$('.owl-reviews').owlCarousel({
+    loop:true,
+    margin:40,
+    responsiveClass:true,
+    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        }
+    }
+})

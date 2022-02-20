@@ -166,3 +166,84 @@
         background-color: #000000;
     }
 }
+
+//reviews-slider
+.owl-reviews {
+    &__slide {
+        padding: 25px 25px 31px;
+        position: relative;
+        background: #EBFAFF;
+        border-radius: 15px;
+    }
+    &__text {
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        a {
+            display: block;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        h3 {
+            font-family: var(--Geometria);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+    }
+    &__img {
+        display: block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 185.16px;
+        height: 134.84px;
+        position: absolute;
+        right: 34px;
+        bottom: -37px;
+    }
+    .owl-stage-outer {
+        padding-bottom: 30px;
+    }
+    .owl-nav {
+        position: absolute;
+        top: -65px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50px;
+    }
+    .owl-nav [class*=owl-]:hover {
+        background: transparent;
+    }
+    .owl-dots {
+        position: absolute;
+        top: -50px;
+        right: 100px;
+    }
+    .owl-dots .owl-dot span {
+        border: 1px solid #000000;
+        background-color: transparent;
+    }
+    .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+        background-color: #000000;
+    }
+}

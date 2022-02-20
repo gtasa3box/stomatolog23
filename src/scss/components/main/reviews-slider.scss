@@ -1,0 +1,29 @@
+.reviews-slider {
+    padding-bottom: 150px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        background-image: url(../img/main/reviews-slider/elem-before.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 269px;
+        height: 400.05px;
+        z-index: -1;
+    }
+    &__content {
+
+    }
+    &__slider {
+        padding-top: 40px;
+        position: relative;
+    }
+    &__btn {
+        width: 179px;
+        height: 40px;
+        margin-top: 40px;
+    }
+}
