@@ -33,6 +33,10 @@
         letter-spacing: 0.02em;
         color: #FFFFFF;
         padding: 11px 24px;
+        @media (max-width:980px) {
+            font-size: 12px;
+            padding: 10px 13px;
+        }
         &-shadow {
             box-shadow: 0px 0px 20px rgba(199, 76, 37, 0.5);
             font-family: var(--Geometria);
@@ -40,6 +44,9 @@
             font-weight: bold;
             font-size: 14px;
             letter-spacing: 0;
+            @media (max-width:980px) {
+                font-size: 12px;
+            }
         }
     }
     &_trans {
@@ -55,5 +62,9 @@
         letter-spacing: 0.02em;
         color: #000000;
         padding: 11px 30px;
+        @media (max-width:980px) {
+            font-size: 12px;
+            white-space: nowrap;
+        }
     }
 }
