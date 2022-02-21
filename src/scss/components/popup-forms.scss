@@ -1,0 +1,155 @@
+.popup {
+    padding: 0;
+    background: #FFFFFF;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 133px;
+    &__title {
+        font-family: var(--Geometria);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 100%;
+            background: #FFFFFF;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+            &::placeholder {
+                font-family: var(--OpenSans);
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        .iti {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        textarea {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            outline: none;
+            resize: none;
+            height: 180px;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border: none;
+            &::placeholder {
+                font-family: var(--OpenSans);
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    &__agree {
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 20px;
+    }
+    &__btn {
+        border: none;
+        height: 40px;
+        font-family: var(--Geometria);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+}
+
+.popup-cons {
+    width: 515px;
+    height: 344px;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/popup/cons/before-elem.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 199px;
+        height: 137.5px;
+        left: -3px;
+        bottom: -1px;
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/popup/cons/before-elem2.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 231px;
+        height: 154.69px;
+        right: -48px;
+        top: -28px;
+        z-index: -1;
+    }
+}
+
+.popup-write {
+    width: 515px;
+    height: 600px;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/popup/write/before-elem.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 241.5px;
+        height: 264px;
+        left: 0;
+        bottom: -2px;
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/popup/write/before-elem2.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 239px;
+        height: 234px;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
