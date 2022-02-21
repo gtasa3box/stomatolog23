@@ -3,7 +3,7 @@ $('.owl-services').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
+    navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
@@ -27,7 +27,7 @@ $('.owl-specialists').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
+    navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
@@ -80,7 +80,7 @@ $('.owl-result').owlCarousel({
     loop:true,
     margin:40,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
+    navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
@@ -104,7 +104,7 @@ $('.owl-reviews').owlCarousel({
     loop:true,
     margin:40,
     responsiveClass:true,
-    navText: ["<img src='../img/arrow-slider.svg'>","<img src='../img/arrow-slider-next.svg'>"],
+    navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
             items:1,
@@ -121,3 +121,9 @@ $('.owl-reviews').owlCarousel({
         }
     }
 })
+
+//nav-drop
+$('.nav__elem_drop').click(function(){
+    $(this).toggleClass("active");
+    $($(this).data("target")).toggleClass("active");
+});

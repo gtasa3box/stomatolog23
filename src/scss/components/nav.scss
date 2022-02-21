@@ -15,6 +15,7 @@
         transition: 0.3s ease;
         margin: 0 25px;
         position: relative;
+        user-select: none;
         &:hover {
             opacity: 0.8;
         }
@@ -31,7 +32,100 @@
                 top: 50%;
                 transform: translateY(-50%);
                 right: -16px;
+                transition: 0.3s ease;
             }
+            &.active {
+                &:before {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
+    }
+    //drop
+    &__drop {
+        position: absolute;
+        background-color: #FFFFFF;
+        padding: 20px 10px 15px;
+        width: 100%;
+        left: 0;
+        top: 70px;
+        border-top: 2px solid #E94F1E;
+        display: none;
+        &.active {
+            display: block;
+        }
+        &-btn {
+            width: 143px;
+            height: 34px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 0;
+        }
+        &-elem {
+            position: relative;
+            padding: 15px 20px;
+            transition: 0.3s ease;
+        }
+        &-link {
+            font-family: var(--Geometria);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000000;
+            max-width: 191px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+            &_child {
+                margin-top: 10px;
+                display: block;
+                font-family: var(--OpenSans);
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        &-elem_fav {
+            background: #38B5DF;
+            border-radius: 10px;
+            &:before {
+                content: '';
+                position: absolute;
+                right: 12px;
+                top: 10px;
+                background-image: url(../img/star.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 18px;
+            }
+            a {
+                color: white;
+                border-color: white;
+            }
+        }
+        &-img {
+            display: block;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 132px;
         }
     }
 }
