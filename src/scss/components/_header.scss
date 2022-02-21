@@ -4,18 +4,51 @@
     z-index: 10;
     .wrapper {
         position: relative;
+        @media (max-width:768px) {
+            position: initial;
+        }
     }
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 14px 0 15px;
+        @media (max-width:980px) {
+            padding: 10px;
+        }
     }
     &__logo {
         width: 93px;
         height: 41px;
+        @media (max-width:980px) {
+            width: 89px;
+            height: 39px;
+        }
+    }
+    &__nav {
+        @media (max-width:768px) {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            min-height: 100vh;
+            padding-bottom: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            left: 0;
+            top: 0;
+            z-index: 4;
+            &.active {
+                display: block;
+            }
+        }
     }
     &__number {
+        @media (max-width:768px) {
+            margin-left: auto;
+        }
+        @media (max-width:320px) {
+            display: none;
+        }
         .number {
             display: block;
             font-family: var(--OpenSans);
@@ -66,5 +99,20 @@
     &__btn {
         width: 164px;
         height: 36px;
+        @media (max-width:980px) {
+            display: none;
+        }
+    }
+    //mob
+    &__burger {
+        display: none;
+        @media (max-width:768px) {
+            display: block;
+            width: 35px;
+            height: 27px;
+            margin-left: 50px;
+            position: relative;
+            z-index: 5;
+        }
     }
 }

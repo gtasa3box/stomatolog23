@@ -153,3 +153,10 @@ $('.nav__elem_drop').click(function(){
     $(this).toggleClass("active");
     $($(this).data("target")).toggleClass("active");
 });
+
+//burger
+$('.burger').click(function(){
+    $(this).toggleClass("active");
+    $('.header__nav').toggleClass("active");
+    $('body').toggleClass("hidden");
+});
