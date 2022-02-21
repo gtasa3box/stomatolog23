@@ -74,6 +74,32 @@ document.querySelector('#phone1').addEventListener('input',
     }
 )
 
+const phoneInputField2 = document.querySelector("#phone2");
+const phoneInput2 = window.intlTelInput(phoneInputField2, {
+    initialCountry: "ru",
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+document.querySelector('#phone2').addEventListener('input', 
+    function(e){
+      this.value = this.value.replace(/[^\d.]/g, '');
+    }
+)
+
+const phoneInputField3 = document.querySelector("#phone3");
+const phoneInput3 = window.intlTelInput(phoneInputField3, {
+    initialCountry: "ru",
+    utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+
+document.querySelector('#phone3').addEventListener('input', 
+    function(e){
+      this.value = this.value.replace(/[^\d.]/g, '');
+    }
+)
+
 // slider-result
 
 $('.owl-result').owlCarousel({
