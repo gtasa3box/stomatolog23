@@ -1,6 +1,9 @@
 .card-person {
     display: flex;
     justify-content: space-between;
+    @media (max-width:480px) {
+        flex-direction: column-reverse;
+    }
     &__content {
 
     }
@@ -11,6 +14,21 @@
         border-radius: 10px;
         max-width: 253px;
         position: relative;
+        @media (max-width:980px) {
+            max-width: 213px;
+            padding: 17px;
+        }
+        @media (max-width:768px) {
+            max-width: 334px;
+            padding: 20px 30px 20px 16px;
+        }
+        @media (max-width:480px) {
+            max-width: 100%;
+            padding: 20px 17px;
+        }
+        @media (max-width:320px) {
+            padding: 25px 15px;
+        }
         &::before {
             content: '';
             position: absolute;
@@ -20,6 +38,10 @@
             background: #FF6939;
             right: -32px;
             top: 55px;
+            @media (max-width:480px) {
+                top: -47px;
+                right: 140px;
+            }
         }
         &::after {
             content: '';
@@ -30,6 +52,12 @@
             right: -30px;
             top: 59.5px;
             z-index: -1;
+            @media (max-width:480px) {
+                transform: rotate(-90deg);
+                right: 124px;
+                top: -21px;
+                width: 42px;
+            }
         }
     }
     &__name {
@@ -41,6 +69,19 @@
         letter-spacing: 0.02em;
         color: #000000;
         margin-bottom: 10px;
+        @media (max-width:980px) {
+            font-size: 14px;
+        }
+        @media (max-width:768px) {
+            max-width: 200px;
+        }
+        @media (max-width:480px) {
+            font-size: 16px;
+            max-width: none;
+        }
+        @media (max-width:320px) {
+            font-size: 14px;
+        }
     }
     &__text {
         font-family: var(--OpenSans);
@@ -50,10 +91,25 @@
         line-height: 130%;
         letter-spacing: 0.02em;
         color: rgba(0, 0, 0, 0.7);
+        @media (max-width:980px) {
+            font-size: 11px;
+        }
+        @media (max-width:480px) {
+            font-size: 12px;
+        }
     }
     &__statistic {
         display: flex;
         margin: 20px 0;
+        @media (max-width:768px) {
+            margin: 25px 0;
+        }
+        @media (max-width:480px) {
+            margin: 20px 0;
+        }
+        @media (max-width:320px) {
+            margin: 15px 0 30px;
+        }
         p {
             width: 100%;
             display: flex;
@@ -65,6 +121,12 @@
             line-height: 130%;
             letter-spacing: 0.02em;
             color: rgba(0, 0, 0, 0.7);
+            @media (max-width:980px) {
+                font-size: 11px;
+            }
+            @media (max-width:480px) {
+                font-size: 12px;
+            }
         }
         span {
             font-family: var(--Roboto);
@@ -74,6 +136,12 @@
             line-height: 130%;
             letter-spacing: 0.02em;
             color: #000000;
+            @media (max-width:980px) {
+                font-size: 16px;
+            }
+            @media (max-width:480px) {
+                font-size: 18px;
+            }
         }
     }
     &__education {
@@ -84,11 +152,30 @@
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #000000;
+        @media (max-width:980px) {
+            font-size: 11px;
+        }
+        @media (max-width:480px) {
+            font-size: 12px;
+        }
     }
     &__btn {
         margin-top: 30px;
         width: 189px;
         height: 38px;
+        @media (max-width:980px) {
+            width: 158.97px;
+            height: 31.96px;
+            margin-top: 20px;
+        }
+        @media (max-width:768px) {
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+        }
+        @media (max-width:480px) {
+            display: none;
+        }
     }
     &__img {
         display: block;
@@ -98,6 +185,26 @@
         width: 285px;
         height: 418px;
         margin-top: 24px;
+        @media (max-width:980px) {
+            width: 239.72px;
+            height: 351.59px;
+            margin-top: 0;
+        }
+        @media (max-width:768px) {
+            width: 266px;
+            height: 391px;
+            margin-top: -28px;
+        }
+        @media (max-width:480px) {
+            margin-top: 0;
+            margin: 0 auto;
+            width: 228px;
+            height: 334px;
+        }
+        @media (max-width:320px) {
+            width: 204px;
+            height: 300px;
+        }
     }
 }
 

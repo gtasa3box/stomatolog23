@@ -35,12 +35,14 @@ $('.owl-specialists').owlCarousel({
     navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
     responsive:{
         0:{
-            items:1,
-            nav:true
+            items:3,
+            nav:true,
+            dots:false
         },
-        600:{
-            items:2,
-            nav:false
+        321:{
+            items:4,
+            nav:true,
+            dots:false
         },
         1000:{
             items:4,
