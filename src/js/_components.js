@@ -147,9 +147,15 @@ $('.owl-reviews').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:false,
+            dots: true
         },
-        768:{
+        481:{
+            items:2,
+            nav:false,
+            dots: true
+        },
+        769:{
             items:2,
             nav:true
         },
