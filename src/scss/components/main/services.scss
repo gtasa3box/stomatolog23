@@ -10,6 +10,9 @@
     @media (max-width:480px) {
         padding: 80px 0 80px;
     }
+    @media (max-width:320px) {
+        padding-bottom: 146px;
+    }
     &:before {
         content: '';
         position: absolute;
