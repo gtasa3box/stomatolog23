@@ -117,11 +117,17 @@ $('.owl-result').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:false,
+            dots: true
         },
-        600:{
+        321:{
             items:2,
-            nav:false
+            nav:false,
+            dots: true
+        },
+        769:{
+            items:3,
+            nav:true
         },
         1000:{
             items:3,
@@ -143,9 +149,9 @@ $('.owl-reviews').owlCarousel({
             items:1,
             nav:true
         },
-        600:{
+        768:{
             items:2,
-            nav:false
+            nav:true
         },
         1000:{
             items:2,
