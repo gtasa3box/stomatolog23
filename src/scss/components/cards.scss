@@ -215,6 +215,26 @@
     height: 200px;
     border-radius: 15px;
     cursor: pointer;
+    @media (max-width:980px) {
+        height: 166px;
+    }
+    @media (max-width:768px) {
+        height: 220px;
+    }
+    @media (max-width:480px) {
+        height: 230px;
+    }
+    @media (max-width:320px) {
+        height: 170px;
+    }
+    &_full {
+        @media (max-width:480px) {
+            grid-column-start: span 2;
+        }
+        @media (max-width:320px) {
+            grid-column-start: auto;
+        }
+    }
     &__img {
         display: block;
         position: absolute;
@@ -269,6 +289,18 @@
         padding: 34px 48px 0 20px;
         background-color: rgba(58, 161, 196, 0.8);
         transform: translateY(100%);
+        @media (max-width:980px) {
+            padding: 18px 16px;
+        }
+        @media (max-width:768px) {
+            padding: 17px 13px;
+        }
+        @media (max-width:480px) {
+            padding: 16px 12px;
+        }
+        @media (max-width:320px) {
+            padding: 24px 17px;
+        }
     }
     &:hover {
         .card-stock {
