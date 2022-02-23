@@ -179,3 +179,6 @@ $('.burger').click(function(){
     $('.header__nav').toggleClass("active");
     $('body').toggleClass("hidden");
 });
+
+// dropdown-two-click
+$(".nav__elem_drop").one("click", false);
