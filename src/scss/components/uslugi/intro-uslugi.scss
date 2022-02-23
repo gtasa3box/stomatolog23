@@ -1,0 +1,33 @@
+.intro-uslugi {
+    background-image: url(../img/uslugi/back.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 100px;
+    &__info {
+        position: relative;
+        padding: 50px 0;
+        top: 50px;
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 2000%;
+            height: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(20px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    &__btns {
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+    .title {
+        position: relative;
+        z-index: 2;
+    }
+}
