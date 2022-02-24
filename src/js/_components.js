@@ -170,6 +170,31 @@ $('.owl-reviews').owlCarousel({
     }
 })
 
+//slider-licenses
+
+$('.owl-licenses').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
+    responsive:{
+        0:{
+            items:2,
+            nav:false,
+            dots: true
+        },
+        769:{
+            items:3,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+})
+
 //uslugi-grid__bottom-grid-btn
 $('.btn').click(function(){
     $($(this).data("target")).toggleClass("active");
