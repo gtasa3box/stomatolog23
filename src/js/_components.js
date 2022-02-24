@@ -178,7 +178,7 @@ $('.btn').click(function(){
 //prices-pads
 $('.pad__title').click(function(){
     $(this).toggleClass("active");
-    $($(this).data("target")).slideToggle();
+    $($(this).data("target")).stop().slideToggle();
 });
 
 //input-tel-banner
