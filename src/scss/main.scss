@@ -18,6 +18,7 @@
 @import "./components/popup-forms";
 @import "./components/burger";
 @import "./components/breadcrumbs";
+@import "./components/pad";
 
 // подключения блоков страницы
 @import "./components/header";
@@ -39,3 +40,6 @@
 @import "./components/uslugi/intro-uslugi";
 @import "./components/uslugi/uslugi-grid";
 @import "./components/uslugi/info-block";
+
+//prices
+@import "./components/prices/diagnostic-pads";

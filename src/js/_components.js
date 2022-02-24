@@ -175,6 +175,12 @@ $('.btn').click(function(){
     $($(this).data("target")).toggleClass("active");
 });
 
+//prices-pads
+$('.pad__title').click(function(){
+    $(this).toggleClass("active");
+    $($(this).data("target")).slideToggle();
+});
+
 //input-tel-banner
 const phoneInputField = document.querySelector("#phone");
 const phoneInput = window.intlTelInput(phoneInputField, {
