@@ -318,3 +318,127 @@
         }
     }
 }
+
+//cards-uslugi
+
+.card-uslugi-top {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 15px;
+    overflow: hidden;
+    @media (max-width:980px) {
+        height: 220px;
+    }
+    @media (max-width:480px) {
+        height: 180px;
+    }
+    @media (max-width:320px) {
+        height: 140px;
+    }
+    &__img {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__title {
+        font-family: var(--Geometria);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        background: #FF6939;
+        border-radius: 0px 15px 15px 0;
+        padding: 30px;
+        width: 238px;
+        height: 99px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        user-select: none;
+        @media (max-width:980px) {
+            font-size: 16px;
+            padding: 20px 30px;
+            width: 238px;
+            height: 80px;
+        }
+        @media (max-width:480px) {
+            font-size: 14px;
+            width: 100%;
+            height: 60px;
+            padding: 13px 15px;
+        }
+        @media (max-width:320px) {
+            font-size: 12px;
+            padding: 10px 15px;
+            width: 155px;
+            height: 50px;
+        }
+    }
+}
+
+.card-uslugi-bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    @media (max-width:980px) {
+        height: 170px;
+    }
+    @media (max-width:320px) {
+        height: 140px;
+    }
+    &__img {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+    }
+    &__title {
+        z-index: 2;
+        font-family: var(--Geometria);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        padding: 0 5px;
+        user-select: none;
+        @media (max-width:980px) {
+            font-size: 16px;
+        }
+        @media (max-width:320px) {
+            font-size: 14px;
+        }
+    }
+}

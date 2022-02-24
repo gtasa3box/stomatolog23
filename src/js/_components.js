@@ -170,6 +170,11 @@ $('.owl-reviews').owlCarousel({
     }
 })
 
+//uslugi-grid__bottom-grid-btn
+$('.btn').click(function(){
+    $($(this).data("target")).toggleClass("active");
+});
+
 //input-tel-banner
 const phoneInputField = document.querySelector("#phone");
 const phoneInput = window.intlTelInput(phoneInputField, {
