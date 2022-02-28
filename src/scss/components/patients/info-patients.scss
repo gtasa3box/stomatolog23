@@ -1,9 +1,13 @@
-.info-patients {
+.info-patients-nav {
     margin-top: -50px;
-    padding-bottom: 110px;
     @media (max-width:768px) {
         margin-top: 0;
     }
+}
+
+
+.info-patients {
+    padding-bottom: 110px;
     @media (max-width:480px) {
         padding-bottom: 80px;
     }
