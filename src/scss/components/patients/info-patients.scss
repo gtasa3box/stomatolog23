@@ -37,8 +37,17 @@
                 text-align: center;
                 letter-spacing: 0.02em;
                 color: #000000;
+                position: relative;
                 &:hover {
                     opacity: 0.8;
+                }
+                &.active {
+                    border-bottom: 3px solid #E94F1E;
+                    margin-bottom: -2px;
+                    cursor: default;
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
         }
