@@ -86,4 +86,10 @@
         position: relative;
         z-index: 2;
     }
+    //not before
+    &_not-before {
+        &:before {
+            content: none;
+        }
+    }
 }
