@@ -206,6 +206,31 @@ $('.pad__title').click(function(){
     $($(this).data("target")).stop().slideToggle();
 });
 
+//owl-video-slider
+
+$('.owl-video-reviews').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    navText: ["<img src='img/arrow-slider.svg'>","<img src='img/arrow-slider-next.svg'>"],
+    responsive:{
+        0:{
+            items:2,
+            nav:false,
+            dots: true
+        },
+        769:{
+            items:3,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+})
+
 //input-tel-banner
 const phoneInputField = document.querySelector("#phone");
 const phoneInput = window.intlTelInput(phoneInputField, {
