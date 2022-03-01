@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/rights-obligations/intro-uslugi.html')
+      @include('partials/rights-obligations/breadcrumbs.html')
+
+      @include('partials/patients/info-patients-nav.html')
+      
+      @include('partials/rights-obligations/rights-obligations.html')
+    
+      @include('partials/patients/info-patients.html')
+      @include('partials/main/map.html')
+    </main>
+    @include('partials/popup-forms.html')
+
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>
