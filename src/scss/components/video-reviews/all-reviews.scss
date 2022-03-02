@@ -1,5 +1,22 @@
 .all-reviews {
     padding-bottom: 150px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/video-clients/before-elem.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 248px;
+        height: 355.6px;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @media (max-width:480px) {
+            display: none;
+        }
+    }
     @media (max-width:980px) {
         padding-bottom: 120px;
     }
