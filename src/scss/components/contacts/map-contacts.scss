@@ -1,0 +1,59 @@
+.map-contacts {
+    position: relative;
+    height: 500px;
+    margin-bottom: 100px;
+    iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__content {
+        position: relative;
+        height: 500px;
+    }
+    &__locate {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background: rgba(235, 250, 255, 0.4);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        padding: 25px;
+        h3 {
+            font-family: var(--Geometria);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        p {
+            font-family: var(--OpenSans);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+    }
+    &__btn {
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        background: rgba(235, 250, 255, 0.4);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        padding: 30px;
+        .btn {
+            width: 227px;
+            height: 40px;
+        }
+    }
+}
