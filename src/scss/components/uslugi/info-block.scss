@@ -150,6 +150,22 @@
                 height: 170px;
             }
         }
+        //esteticheskaya-stomatologiya
+        &_est-sto {
+            height: 450px;
+            @media (max-width:980px) {
+                height: 400px;
+            }
+            @media (max-width:768px) {
+                height: 250px; 
+            }
+            @media (max-width:480px) {
+                height: 200px;
+            }
+            @media (max-width:320px) {
+                height: 170px;
+            }
+        }
         a {
             display: block;
             background-size: cover;
