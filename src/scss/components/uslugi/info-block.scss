@@ -110,6 +110,36 @@
         @media (max-width:768px) {
             flex-direction: column;
         }
+        &_wrap {
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            @media (max-width:480px) {
+                margin-bottom: 20px;
+            }
+            h4 {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-top: 40px;
+                font-family: var(--OpenSans);
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 130%;
+                letter-spacing: 0.02em;
+                color: #000000;
+                @media (max-width:980px) {
+                    font-size: 18px;
+                }
+                @media (max-width:768px) {
+                    font-size: 16px;
+                }
+                @media (max-width:320px) {
+                    font-size: 14px;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
     }
     &__img {
         background-size: cover;
@@ -328,6 +358,10 @@
             list-style-type: disc;
             padding-left: 20px;
         }
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
         h4 {
             font-family: var(--OpenSans);
             font-style: normal;
@@ -366,6 +400,29 @@
         @media (max-width:768px) {
             font-size: 12px;
             margin-top: 20px;
+        }
+    }
+    &__list {
+        width: 45%;
+        font-family: var(--OpenSans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.7);
+        @media (max-width:980px) {
+            font-size: 14px;
+        }
+        @media (max-width:768px) {
+            width: 100%;
+            font-size: 12px;
+        }
+        @media (max-width:320px) {
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     }
 }
